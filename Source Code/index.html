@@ -1,0 +1,589 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+
+<head>
+	<title>Middle East Empire</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script type="text/javascript" src="jQuery/jquery-1.8.3.min.js" ></script>
+	<script type="text/javascript" src="script.js" ></script>
+</head>
+
+<body>
+	
+	<!-- Header -->
+	<div id="header">
+		<img src="header.png" alt="Middle East Empire" width="900" height="100" />
+	</div>
+	<!-- Header : DONE ! -->
+	
+	<!-- First Page, Choose Country : -->
+	<div id="choose-wrapper">
+		<div id="content">
+			<div id="intro">
+				<p>Before you start,</p>
+				<p>Choose the country you wish to lead</p>
+			</div>
+			<div id="options">
+				<select>
+					<option value="select" selected="selected">Select</option>
+					<option value="turkey">Turkey</option>
+					<option value="syria">Syria</option>
+					<option value="iraq">Iraq</option>
+					<option value="iran">Iran</option>
+					<option value="israel">Israel</option>
+					<option value="lebanon">Lebanon</option>
+					<option value="jordan">Jordan</option>
+					<option value="saudi">Saudi Arabia</option>
+					<option value="qatar">Qatar</option>
+					<option value="UAE">UAE</option>
+					<option value="omen">Oman</option>
+					<option value="yemen">Yemen</option>
+					<option value="egypt">Egypt</option>
+				</select>
+			</div>
+			<div id="country">
+			</div>
+			<div id="submit"><input type="button" value="Ready to Fight!" class="go" /></div>
+		</div>
+	</div>
+	<!-- First Page, Choose Country : DONE ! -->
+	
+	<!-- Game Page, The Game : -->
+	<div id="game-wrapper">
+		<div id="info">
+			<div id="image"></div>
+			<div id="desc">
+				<div id="date"><img src="assets/date.png" alt="date" width="32" height="32"/><span></span></div>
+				<div id="people"><img src="assets/people.png" alt="people" width="32" height="32"/><span></span></div>
+				<div id="money"><img src="assets/cash.png" alt="cash" width="32" height="32"/><span></span></div>
+			</div>
+		</div>
+		
+		<div id="menu">
+			<ul>
+				<li><a href="#news">News</a></li>
+				<li><a href="#battlefield">Battlefield</a></li>
+				<li><a href="#weapons">Buy Weapons</a></li>
+				<li><a href="#relations">Relations</a></li>
+				<li><a href="#turn">Pass Turn</a></li>
+			</ul>
+		</div>
+		
+		<div id="content">
+			<div class="divContent" id="news">news lorem impsum href matar</div>
+			<div id="battlefield">
+				<div id="info">
+					<div id="title">Commit Action</div>
+					<div id="desc">You can commit one military action every turn.<br />Those Actions can lead to war!</div>
+				</div>
+				<div id="actions">
+					<table border="1px">
+						<tr> <!-- 1 -->
+							<th></th>
+							<th>Action Type</th>
+							<th>Require to commit the action</th>
+							<th>Choose the target country</th>
+							<th></th>
+						</tr>
+						<tr> <!-- 2 -->
+							<th><img src="battlefield/troops.jpg" width="100px" height="60px" alt="army" /></th>
+							<th>Full alert border reinforcement</th>
+							<th>Without minimum requirements.</th>
+							<th id="choose">
+								<select>
+									<option value="select" selected="selected">Select</option>
+									<option value="turkey">Turkey</option>
+									<option value="syria">Syria</option>
+									<option value="iraq">Iraq</option>
+									<option value="iran">Iran</option>
+									<option value="israel">Israel</option>
+									<option value="lebanon">Lebanon</option>
+									<option value="jordan">Jordan</option>
+									<option value="saudi">Saudi Arabia</option>
+									<option value="qatar">Qatar</option>
+									<option value="united">UAE</option>
+									<option value="oman">Oman</option>
+									<option value="yemen">Yemen</option>
+									<option value="egypt">Egypt</option>
+								</select>
+							</th>
+							<th id="submit" ><div id="alert"><input type="button" value="Commit Action !" class="go" /></div></th>
+						</tr>
+						<tr> <!-- 3 -->
+							<th><img src="battlefield/troops1.jpg" width="100px" height="60px" alt="army" /></th>
+							<th>Send forces to the border</th>
+							<th>Require minimum 20,000 troops to commit the action.</th>
+							<th id="choose">
+								<select>
+									<option value="select" selected="selected">Select</option>
+									<option value="turkey">Turkey</option>
+									<option value="syria">Syria</option>
+									<option value="iraq">Iraq</option>
+									<option value="iran">Iran</option>
+									<option value="israel">Israel</option>
+									<option value="lebanon">Lebanon</option>
+									<option value="jordan">Jordan</option>
+									<option value="saudi">Saudi Arabia</option>
+									<option value="qatar">Qatar</option>
+									<option value="united">UAE</option>
+									<option value="oman">Oman</option>
+									<option value="yemen">Yemen</option>
+									<option value="egypt">Egypt</option>
+								</select>
+							</th>
+							<th id="submit" ><div id="border"><input type="button" value="Commit Action !" class="go" /></div></th>
+						</tr>
+						<tr> <!-- 4 -->
+							<th><img src="battlefield/jet.jpg" width="100px" height="60px" alt="army" /></th>
+							<th>Bomb civilian’s targets</th>
+							<th>Require minimum 25 jets to commit the action.</th>
+							<th id="choose">
+								<select>
+									<option value="select" selected="selected">Select</option>
+									<option value="turkey">Turkey</option>
+									<option value="syria">Syria</option>
+									<option value="iraq">Iraq</option>
+									<option value="iran">Iran</option>
+									<option value="israel">Israel</option>
+									<option value="lebanon">Lebanon</option>
+									<option value="jordan">Jordan</option>
+									<option value="saudi">Saudi Arabia</option>
+									<option value="qatar">Qatar</option>
+									<option value="united">UAE</option>
+									<option value="oman">Oman</option>
+									<option value="yemen">Yemen</option>
+									<option value="egypt">Egypt</option>
+								</select>
+							</th>
+							<th id="submit" ><div id="civilian"><input type="button" value="Commit Action !" class="go" /></div></th>
+						</tr>
+						<tr> <!-- 5 -->
+							<th><img src="battlefield/jet1.jpg" width="100px" height="60px" alt="army" /></th>
+							<th>Bomb industrial targets</th>
+							<th>Require minimum 25 jets to commit the action.</th>
+							<th id="choose">
+								<select>
+									<option value="select" selected="selected">Select</option>
+									<option value="turkey">Turkey</option>
+									<option value="syria">Syria</option>
+									<option value="iraq">Iraq</option>
+									<option value="iran">Iran</option>
+									<option value="israel">Israel</option>
+									<option value="lebanon">Lebanon</option>
+									<option value="jordan">Jordan</option>
+									<option value="saudi">Saudi Arabia</option>
+									<option value="qatar">Qatar</option>
+									<option value="united">UAE</option>
+									<option value="oman">Oman</option>
+									<option value="yemen">Yemen</option>
+									<option value="egypt">Egypt</option>
+								</select>
+							</th>
+							<th id="submit" ><div id="indus"><input type="button" value="Commit Action !" class="go" /></div></th>
+						</tr>
+						<tr> <!-- 6 -->
+							<th><img src="battlefield/jet3.jpg" width="100px" height="60px" alt="army" /></th>
+							<th>Bomb military targets</th>
+							<th>Require minimum 75 jets to commit the action.</th>
+							<th id="choose">
+								<select>
+									<option value="select" selected="selected">Select</option>
+									<option value="turkey">Turkey</option>
+									<option value="syria">Syria</option>
+									<option value="iraq">Iraq</option>
+									<option value="iran">Iran</option>
+									<option value="israel">Israel</option>
+									<option value="lebanon">Lebanon</option>
+									<option value="jordan">Jordan</option>
+									<option value="saudi">Saudi Arabia</option>
+									<option value="qatar">Qatar</option>
+									<option value="united">UAE</option>
+									<option value="oman">Oman</option>
+									<option value="yemen">Yemen</option>
+									<option value="egypt">Egypt</option>
+								</select>
+							</th>
+							<th id="submit" ><div id="military"><input type="button" value="Commit Action !" class="go" /></div></th>
+						</tr>
+						<tr> <!-- 7 -->
+							<th><img src="battlefield/jet4.png" width="100px" height="60px" alt="army" /></th>
+							<th>Bomb research targets</th>
+							<th>Require minimum 75 jets to commit the action.</th>
+							<th id="choose">
+								<select>
+									<option value="select" selected="selected">Select</option>
+									<option value="turkey">Turkey</option>
+									<option value="syria">Syria</option>
+									<option value="iraq">Iraq</option>
+									<option value="iran">Iran</option>
+									<option value="israel">Israel</option>
+									<option value="lebanon">Lebanon</option>
+									<option value="jordan">Jordan</option>
+									<option value="saudi">Saudi Arabia</option>
+									<option value="qatar">Qatar</option>
+									<option value="united">UAE</option>
+									<option value="oman">Oman</option>
+									<option value="yemen">Yemen</option>
+									<option value="egypt">Egypt</option>
+								</select>
+							</th>
+							<th id="submit" ><div id="research"><input type="button" value="Commit Action !" class="go" /></div></th>
+						</tr>
+						<tr> <!-- 8 -->
+							<th><img src="battlefield/missle.jpg" width="100px" height="140px" alt="army" /></th>
+							<th>Launch ballistic missiles</th>
+							<th id="missle">Choose warhead type<br />
+								<form>
+									<input type="radio" name="type" value="regular" />Regular<br />
+									<input type="radio" name="type" value="chemical" />Chemical<br />
+									<input type="radio" name="type" value="biological" />Biological<br />
+									<input type="radio" name="type" value="nuclear" />Nuclear
+								</form><br />
+								<label>Quantity:</label><br />
+								<input id="text" type="text" name="quantity" />
+							</th>
+							<th id="choose">
+								<select>
+									<option value="select" selected="selected">Select</option>
+									<option value="turkey">Turkey</option>
+									<option value="syria">Syria</option>
+									<option value="iraq">Iraq</option>
+									<option value="iran">Iran</option>
+									<option value="israel">Israel</option>
+									<option value="lebanon">Lebanon</option>
+									<option value="jordan">Jordan</option>
+									<option value="saudi">Saudi Arabia</option>
+									<option value="qatar">Qatar</option>
+									<option value="united">UAE</option>
+									<option value="oman">Oman</option>
+									<option value="yemen">Yemen</option>
+									<option value="egypt">Egypt</option>
+								</select>
+							</th>
+							<th id="submit" ><div id="missile"><input type="button" value="Commit Action !" class="go" /></div></th>
+						</tr>
+					</table>
+				</div>
+				<div id="war">
+					<div id="war_title"></div>
+					<!--<table border="1px">
+						<tr>
+							<th id="flag"></th>
+							<th id="troops"></th>
+							<th id="tanks"></th>
+							<th id="art"></th>
+							<th id="buttons"></th>
+						</tr>
+					</table>-->
+				</div>
+				<div id="status">
+					<div id="title">Army Status</div>
+					<table border="1">
+						<tr>
+							<th>Type:</th>
+							<th><img src="battlefield/troops1.jpg" width="100px" height="75px" alt="armor" title="Troops"/></th>
+							<th><img src="battlefield/tank.jpg" width="100px" height="75px" alt="armor" title="Tanks"/></th>
+							<th><img src="battlefield/jet5.jpg" width="100px" height="75px" alt="armor" title="Jets"/></th>
+							<th><img src="battlefield/artillery.jpg" width="100px" height="75px" alt="armor" title="Artillery"/></th>
+							<th><img src="battlefield/antiair.jpg" width="100px" height="75px" alt="armor" title="Anti-Air Misslies"/></th>
+							<th><img src="battlefield/missle.jpg" width="100px" height="75px" alt="armor" title="Misslies"/></th>
+						</tr>
+						<tr id="number">
+							<th>Quantity:</th>
+							<th id="troops"></th>
+							<th id="tanks"></th>
+							<th id="jets"></th>
+							<th id="artillery"></th>
+							<th id="antiair"></th>
+							<th id="missiles"></th>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div id="weapons">
+				<div id="title">Buy Weapons: </br /> <input type="button" class="go" value="Back!" /></div>
+				<table border="1px">
+					<tr id="usa">
+						<th><a href="#usa"><img alt="usa" src="country/usa.GIF" width="180px" height="100px"/></a></th>
+						<th id="info"></th>
+					</tr>
+					<tr id="europe">
+						<th><a href="#europe"><img alt="europe" src="country/europe.GIF" width="180px" height="100px"/></a></th>
+						<th id="info"></th>
+					</tr>
+					<tr id="russia">
+						<th><a href="#russia"><img alt="russia" src="country/russia.GIF" width="180px" height="100px"/></a></th>
+						<th id="info"></th>
+					</tr>
+					<tr id="china">
+						<th><a href="#china"><img alt="china" src="country/china.GIF" width="180px" height="100px"/></a></th>
+						<th id="info"></th>
+					</tr>
+				</table>
+				<!-- USA Country -->
+				<div id="usa" class="supply">
+					<table border="1px">
+						<tr>
+							<th>Image</th>
+							<th>Model</th>
+							<th>Cost</th>
+							<th>You own</th>
+							<th>Can Buy</th>
+							<th>Buy</th>
+						</tr>
+						<tr id="tanks">
+							<th><img alt="tank" src="battlefield/tank.jpg" width="125px" height="75px"/></th>
+							<th>M1 Abrams Main Battle Tank</th>
+							<th id="cost"></th>
+							<th id="own"></th>
+							<th id="can"></th>
+							<th id="much"></th>
+						</tr>
+						
+						<tr id="artillery">
+							<th><img alt="artillery" src="battlefield/artillery.jpg" width="125px" height="75px"/></th>
+							<th>Artillery FH77B05</th>
+							<th id="cost"></th>
+							<th id="own"></th>
+							<th id="can"></th>
+							<th id="much"></th>
+						</tr>
+						
+						<tr id="antiair">
+							<th><img alt="antiair" src="battlefield/antiair.jpg" width="125px" height="75px"/></th>
+							<th>Anti-Air Missiles SAM-6 </th>
+							<th id="cost"></th>
+							<th id="own"></th>
+							<th id="can"></th>
+							<th id="much"></th>
+						</tr>
+						
+						<tr id="jets">
+							<th><img alt="jets" src="battlefield/jet5.jpg" width="125px" height="75px"/></th>
+							<th>Jets F-16</th>
+							<th id="cost"></th>
+							<th id="own"></th>
+							<th id="can"></th>
+							<th id="much"></th>
+						</tr>
+						
+						<tr id="missiles">
+							<th><img alt="missiles" src="battlefield/missle.jpg" width="125px" height="75px"/></th>
+							<th>Regular Missle</th>
+							<th id="cost"></th>
+							<th id="own"></th>
+							<th id="can"></th>
+							<th id="much"></th>
+						</tr>
+					</table>
+				</div>
+				
+				<!-- Europe Union -->
+				<div id="europe" class="supply">
+					<table border="1px">
+						<tr>
+							<th>Image</th>
+							<th>Model</th>
+							<th>Cost</th>
+							<th>You own</th>
+							<th>Can Buy</th>
+							<th>Buy</th>
+						</tr>
+						<tr id="tanks">
+							<th><img alt="tank" src="battlefield/tank.jpg" width="125px" height="75px"/></th>
+							<th>M1 Abrams Main Battle Tank</th>
+							<th id="cost"></th>
+							<th id="own"></th>
+							<th id="can"></th>
+							<th id="much"></th>
+						</tr>
+						
+						<tr id="artillery">
+							<th><img alt="artillery" src="battlefield/artillery.jpg" width="125px" height="75px"/></th>
+							<th>Artillery FH77B05</th>
+							<th id="cost"></th>
+							<th id="own"></th>
+							<th id="can"></th>
+							<th id="much"></th>
+						</tr>
+						
+						<tr id="antiair">
+							<th><img alt="antiair" src="battlefield/antiair.jpg" width="125px" height="75px"/></th>
+							<th>Anti-Air Missiles SAM-6 </th>
+							<th id="cost"></th>
+							<th id="own"></th>
+							<th id="can"></th>
+							<th id="much"></th>
+						</tr>
+						
+						<tr id="jets">
+							<th><img alt="jets" src="battlefield/jet5.jpg" width="125px" height="75px"/></th>
+							<th>Jets F-16</th>
+							<th id="cost"></th>
+							<th id="own"></th>
+							<th id="can"></th>
+							<th id="much"></th>
+						</tr>
+						
+						<tr id="missiles">
+							<th><img alt="missiles" src="battlefield/missle.jpg" width="125px" height="75px"/></th>
+							<th>Regular Missle</th>
+							<th id="cost"></th>
+							<th id="own"></th>
+							<th id="can"></th>
+							<th id="much"></th>
+						</tr>
+					</table>
+				</div>
+				
+				<!-- Russia Country -->
+				<div id="russia" class="supply">
+					<table border="1px">
+						<tr>
+							<th>Image</th>
+							<th>Model</th>
+							<th>Cost</th>
+							<th>You own</th>
+							<th>Can Buy</th>
+							<th>Buy</th>
+						</tr>
+						<tr id="tanks">
+							<th><img alt="tank" src="battlefield/tank.jpg" width="125px" height="75px"/></th>
+							<th>M1 Abrams Main Battle Tank</th>
+							<th id="cost"></th>
+							<th id="own"></th>
+							<th id="can"></th>
+							<th id="much"></th>
+						</tr>
+						
+						<tr id="artillery">
+							<th><img alt="artillery" src="battlefield/artillery.jpg" width="125px" height="75px"/></th>
+							<th>Artillery FH77B05</th>
+							<th id="cost"></th>
+							<th id="own"></th>
+							<th id="can"></th>
+							<th id="much"></th>
+						</tr>
+						
+						<tr id="antiair">
+							<th><img alt="antiair" src="battlefield/antiair.jpg" width="125px" height="75px"/></th>
+							<th>Anti-Air Missiles SAM-6 </th>
+							<th id="cost"></th>
+							<th id="own"></th>
+							<th id="can"></th>
+							<th id="much"></th>
+						</tr>
+						
+						<tr id="jets">
+							<th><img alt="jets" src="battlefield/jet5.jpg" width="125px" height="75px"/></th>
+							<th>Jets F-16</th>
+							<th id="cost"></th>
+							<th id="own"></th>
+							<th id="can"></th>
+							<th id="much"></th>
+						</tr>
+						
+						<tr id="missiles">
+							<th><img alt="missiles" src="battlefield/missle.jpg" width="125px" height="75px"/></th>
+							<th>Regular Missle</th>
+							<th id="cost"></th>
+							<th id="own"></th>
+							<th id="can"></th>
+							<th id="much"></th>
+						</tr>
+					</table>
+				</div>
+				
+				<!-- China Country -->
+				<div id="china" class="supply">
+					<table border="1px">
+						<tr>
+							<th>Image</th>
+							<th>Model</th>
+							<th>Cost</th>
+							<th>You own</th>
+							<th>Can Buy</th>
+							<th>Buy</th>
+						</tr>
+						<tr id="tanks">
+							<th><img alt="tank" src="battlefield/tank.jpg" width="125px" height="75px"/></th>
+							<th>M1 Abrams Main Battle Tank</th>
+							<th id="cost"></th>
+							<th id="own"></th>
+							<th id="can"></th>
+							<th id="much"></th>
+						</tr>
+						
+						<tr id="artillery">
+							<th><img alt="artillery" src="battlefield/artillery.jpg" width="125px" height="75px"/></th>
+							<th>Artillery FH77B05</th>
+							<th id="cost"></th>
+							<th id="own"></th>
+							<th id="can"></th>
+							<th id="much"></th>
+						</tr>
+						
+						<tr id="antiair">
+							<th><img alt="antiair" src="battlefield/antiair.jpg" width="125px" height="75px"/></th>
+							<th>Anti-Air Missiles SAM-6 </th>
+							<th id="cost"></th>
+							<th id="own"></th>
+							<th id="can"></th>
+							<th id="much"></th>
+						</tr>
+						
+						<tr id="jets">
+							<th><img alt="jets" src="battlefield/jet5.jpg" width="125px" height="75px"/></th>
+							<th>Jets F-16</th>
+							<th id="cost"></th>
+							<th id="own"></th>
+							<th id="can"></th>
+							<th id="much"></th>
+						</tr>
+						
+						<tr id="missiles">
+							<th><img alt="missiles" src="battlefield/missle.jpg" width="125px" height="75px"/></th>
+							<th>Regular Missle</th>
+							<th id="cost"></th>
+							<th id="own"></th>
+							<th id="can"></th>
+							<th id="much"></th>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div id="relations">
+				<div id="title">
+					Relations
+				</div>
+				<table border="1px">
+				</table>
+			</div>
+			<div id="turn"></div>
+		</div>
+	</div>
+	<!-- Game Page, The Game: DONE ! -->
+	
+	<!-- Losed Page -->
+	<div id="lose-wrapper">
+		<div id="intro">
+				<p>You Losed!</p>
+				<p>Refresh the page to start again!</p>
+		</div>
+		<div id="image">
+			<img src="assets/losed.jpg" alt="losed" width="400px" height="300px" />
+		</div>
+	</div>
+	<!-- Losed Page : DONE ! -->
+	
+	<!-- Footer -->
+	<div id="footer">
+		<div id="copyright">
+			Copyright 2012, MEE, By Israel Gilyadov
+		</div>
+	</div>
+	<!-- Footer : DONE ! -->
+	
+</body>
+
+</html>
