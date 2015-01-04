@@ -1,4 +1,4 @@
 Middle-East-Empire
 ==================
 
-A web based strategy game, Created with JavaScript and jQuery
+A web based strategy game, created with JavaScript and jQuery
